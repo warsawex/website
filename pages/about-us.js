@@ -8,7 +8,7 @@ const AboutUs = () => (
     <div className="about">
       <h1>About Us</h1>
       <h2>Meet Warsaw.ex founders Discover our story</h2>
-      <p>Our story begins in November 2018….</p>
+      <p>Our story begins in November 2018…</p>
       <img src="/static/logo_about_us.svg" />
       <h1 id="story">Our Story</h1>
       <hr />
