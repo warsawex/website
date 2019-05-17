@@ -34,11 +34,16 @@ const Menu = () => (
           padding: 0px;
           margin-bottom: 30px;
         }
-        h1 {
+        h1,
+        a:link {
           padding: 30px 0px;
           margin: 0px;
           font-size: 25px;
           font-weight: 700;
+          color: #132233;
+          text-decoration: none;
+        }
+        a:visited {
           color: #132233;
         }
         button {
