@@ -17,7 +17,6 @@ const Menu = () => (
     <style jsx>
       {`
         .menu {
-          //   display: none;
           position: absolute;
           top: 80px;
           background-color: white;

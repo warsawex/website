@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Router from "next/router";
 
 import MenuToggle from "./MenuToggle";
 import Menu from "./Menu";
@@ -9,12 +10,18 @@ class Header extends React.Component {
     super(props);
     this.state = { menuVisible: false };
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
+    Router.events.on("routeChangeComplete", this.closeMenu);
   }
 
   toggleMenu() {
     this.setState(state => ({
       menuVisible: !state.menuVisible
     }));
+  }
+
+  closeMenu() {
+    this.setState({ menuVisible: false });
   }
 
   render() {

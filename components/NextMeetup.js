@@ -25,9 +25,9 @@ const Meetup = () => (
         </p>
         <div className="level">
           <h3 id="level">Level:</h3>
-          <img src="/static/phial_full.svg" />
-          <img src="/static/phial_full.svg" />
-          <img src="/static/phial_empty.svg" />
+          <img src="/static/phial_full.svg" alt="full phial" />
+          <img src="/static/phial_full.svg" alt="full phial" />
+          <img src="/static/phial_empty.svg" alt="empty phial" />
         </div>
       </div>
     </div>
@@ -58,7 +58,6 @@ const Meetup = () => (
           font-size: 125px;
           font-weight: 700;
           margin-right: 18px;
-          //   padding: 30px 0px;
         }
         h2 {
           font-size: 54px;
