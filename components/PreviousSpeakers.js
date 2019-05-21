@@ -7,7 +7,7 @@ const PreviousSpeakers = () => (
     <p>See other brave alchemists who shared their knowledge</p>
     <Speaker name="Kamil Kowalski" avatar="/static/kkowalski.jpg" />
     <Speaker name="Artur Sulej" avatar="/static/Artur_Sulej.png" />
-    <style>
+    <style jsx>
       {`
         .speakers {
           text-align: center;
@@ -16,7 +16,7 @@ const PreviousSpeakers = () => (
         .speakers > h1 {
           font-size: 33px;
           font-weight: 300;
-          color: #813D8F;
+          color: #813d8f;
           margin: 15px auto;
         }
         hr {
@@ -29,7 +29,7 @@ const PreviousSpeakers = () => (
         .speakers > p {
           font-size: 25px;
           font-weight: 200;
-          color: #132233
+          color: #132233;
         }
       `}
     </style>

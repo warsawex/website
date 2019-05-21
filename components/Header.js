@@ -11,7 +11,14 @@ class Header extends React.Component {
     this.state = { menuVisible: false };
     this.toggleMenu = this.toggleMenu.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
+  }
+
+  componentDidMount() {
     Router.events.on("routeChangeComplete", this.closeMenu);
+  }
+
+  componentWillUnmount() {
+    Router.events.off("routeChangeComplete", this.closeMenu);
   }
 
   toggleMenu() {

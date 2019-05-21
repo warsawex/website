@@ -8,7 +8,7 @@ const Founders = () => (
     <img src="/static/kamil_kowalski.png" alt="photo of Robert Maciejewski" />
     <h2>Robert Maciejewski</h2>
     <h3>Ruby Developer at Visuality</h3>
-    <style>
+    <style jsx>
       {`
         .founders {
           padding: 30px;
@@ -17,7 +17,7 @@ const Founders = () => (
         .founders > h1 {
           font-size: 33px;
           font-weight: 300;
-          color: #813D8F;
+          color: #813d8f;
           margin: 15px auto;
         }
         hr {

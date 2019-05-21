@@ -13,7 +13,7 @@ const SpeakUpForm = () => (
       <span>I don't have a topic yet</span>
     </div>
     <button id="submit">Submit</button>
-    <style>
+    <style jsx>
       {`
         .speakUp {
           z-index: 1;
@@ -23,7 +23,7 @@ const SpeakUpForm = () => (
           text-align: center;
           font-size: 50px;
           font-weight: 700;
-          color: #813D8F;
+          color: #813d8f;
         }
         .speakUp > h2 {
           text-align: center;
@@ -32,7 +32,7 @@ const SpeakUpForm = () => (
           color: #132233;
         }
         .box {
-          border: solid 1px #813E8F;
+          border: solid 1px #813e8f;
           border-radius: 5px 5px 5px 5px;
           font-size: 18px;
           font-weight: 400;
@@ -60,7 +60,7 @@ const SpeakUpForm = () => (
           height: 29px;
           width: 29px;
           border: none;
-          border-radius: 45px; 
+          border-radius: 45px;
         }
         span {
           display: inline;

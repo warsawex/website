@@ -7,7 +7,7 @@ const Speaker = props => (
       <div className="overlay" />
     </div>
     <h2>{props.name}</h2>
-    <style>
+    <style jsx>
       {`
         .speaker > h2 {
           font-size: 20px;
@@ -29,7 +29,7 @@ const Speaker = props => (
           width: 174px;
           height: 174px;
           border-radius: 90px 90px 90px 90px;
-          background: #813D8F;
+          background: #813d8f;
           position: absolute;
           opacity: 0.44;
         }

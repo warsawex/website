@@ -2,7 +2,7 @@ const SeeUs = () => (
   <div id="see_us">
     See us on the next Meetup!
     <button id="join">JOIN THE COMMUNITY</button>
-    <style>
+    <style jsx>
       {`
         #see_us {
           padding: 30px;
