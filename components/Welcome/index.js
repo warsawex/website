@@ -8,7 +8,11 @@ const Welcome = () => (
         it monthly.
       </h1>
     </div>
-    <button>JOIN THE COMMUNITY</button>
+    <button>
+      <a href="https://www.meetup.com/pl-PL/warsaw-ex/" target="_blank">
+        JOIN THE COMMUNITY
+      </a>
+    </button>
   </div>
 );
 

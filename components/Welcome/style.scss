@@ -16,7 +16,8 @@
     margin: 40px 0;
     width: calc(100% - 100px);
   }
-  button {
+  > button,
+  a:link {
     background-color: white;
     color: #132233;
     border: none;
@@ -26,5 +27,9 @@
     font-size: 18px;
     font-weight: 700;
     margin: 50px 0;
+    text-decoration: none;
+  }
+  > button > a:visited {
+    color: #132233;
   }
 }

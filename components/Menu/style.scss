@@ -15,8 +15,7 @@
     padding: 0px;
     margin-bottom: 30px;
   }
-  h1,
-  a:link {
+  h1 > a:link {
     padding: 30px 0px;
     margin: 0px;
     font-size: 25px;
@@ -24,10 +23,10 @@
     color: #132233;
     text-decoration: none;
   }
-  a:visited {
+  > h1 > a:visited {
     color: #132233;
   }
-  button {
+  > button {
     background-image: linear-gradient(#4c4092, #8c3c8f);
     color: white;
     font-weight: 700;
@@ -38,5 +37,13 @@
     font-size: 18px;
     display: block;
     margin: 100px auto;
+  }
+  > button > a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+  > button > a:visited {
+    color: white;
   }
 }

@@ -14,7 +14,11 @@ const Menu = () => (
         <a>About Us</a>
       </Link>
     </h1>
-    <button>JOIN THE COMMUNITY</button>
+    <button>
+      <a href="https://www.meetup.com/pl-PL/warsaw-ex/" target="_blank">
+        JOIN THE COMMUNITY
+      </a>
+    </button>
   </div>
 );
 
