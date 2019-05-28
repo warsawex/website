@@ -1,4 +1,5 @@
 import Head from "next/head";
+import "./style.scss";
 
 const LayoutWrapper = props => props.children;
 
@@ -10,15 +11,6 @@ const Layout = props => (
         rel="stylesheet"
       />
     </Head>
-    <style jsx global>
-      {`
-        body {
-          font-family: "Montserrat", sans-serif;
-          margin: 0;
-          padding: 0;
-        }
-      `}
-    </style>
     {props.children}
   </LayoutWrapper>
 );

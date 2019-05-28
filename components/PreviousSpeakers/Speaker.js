@@ -1,13 +1,15 @@
+import style from "./style.scss";
+
 const Speaker = props => (
-  <div className="speaker">
+  <div className={style.speaker}>
     <div
-      className="image"
+      className={style.image}
       style={{ backgroundImage: `url("${props.avatar}")` }}
     >
-      <div className="overlay" />
+      <div className={style.overlay} />
     </div>
     <h2>{props.name}</h2>
-    <style jsx>
+    {/* <style jsx>
       {`
         .speaker > h2 {
           font-size: 20px;
@@ -18,6 +20,7 @@ const Speaker = props => (
           display: flex;
           flex-direction: column;
           align-items: center;
+          margin-top: 50px;
         }
         .image {
           background-size: cover;
@@ -34,7 +37,7 @@ const Speaker = props => (
           opacity: 0.44;
         }
       `}
-    </style>
+    </style> */}
   </div>
 );
 

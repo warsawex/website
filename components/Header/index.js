@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import Router from "next/router";
+import style from "./style.scss";
 
-import MenuToggle from "./MenuToggle";
-import Menu from "./Menu";
+import MenuToggle from "../MenuToggle";
+import Menu from "../Menu";
 
 class Header extends React.Component {
   constructor(props) {
@@ -21,6 +22,10 @@ class Header extends React.Component {
     Router.events.off("routeChangeComplete", this.closeMenu);
   }
 
+  componentDidUpdate() {
+    document.body.classList.toggle("menuOpen", this.state.menuVisible);
+  }
+
   toggleMenu() {
     this.setState(state => ({
       menuVisible: !state.menuVisible
@@ -33,7 +38,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className="header">
+      <div className={style.header}>
         <Link href="/">
           <a>
             <img src="/static/warsawex-logo.svg" alt="warsaw.ex logo" />
@@ -41,20 +46,6 @@ class Header extends React.Component {
         </Link>
         <MenuToggle onClick={this.toggleMenu} />
         {this.state.menuVisible && <Menu />}
-        <style jsx>
-          {`
-            .header {
-              display: flex;
-              justify-content: space-between;
-              align-items: baseline;
-              padding: 30px;
-            }
-            img {
-              height: 23px;
-              width: 128px;
-            }
-          `}
-        </style>
       </div>
     );
   }

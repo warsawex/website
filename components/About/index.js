@@ -1,9 +1,9 @@
-import css from "./About.scss";
+import style from "./style.scss";
 
 const About = () => (
-  <div className={css.about}>
+  <div className={style.about}>
     <h1>About Us</h1>
-    <p className={css.emphasis}>Meet Warsaw.ex founders Discover our story</p>
+    <p className={style.emphasis}>Meet Warsaw.ex founders Discover our story</p>
     <p>Our story begins in November 2018…</p>
     <img src="/static/logo_about_us.svg" alt="big warsaw.ex logo" />
     <h2>Our Story</h2>
