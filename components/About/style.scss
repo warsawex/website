@@ -1,0 +1,41 @@
+.about {
+  z-index: 1;
+  padding: 30px;
+  text-align: center;
+
+  > h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #813d8f;
+  }
+  > img {
+    height: 400px;
+    width: auto;
+    margin-bottom: 120px;
+  }
+  > p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 25px;
+  }
+  > .emphasis {
+    font-size: 24px;
+    font-weight: 200;
+    color: #132233;
+  }
+  > h2 {
+    font-size: 33px;
+    font-weight: 300;
+    color: #813d8f;
+    margin: 15px auto;
+  }
+  > hr {
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #813d8f;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+}

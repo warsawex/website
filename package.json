@@ -6,12 +6,16 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "now-build": "next build",
+    "start": "next start -p $PORT"
   },
   "author": "Anita Kowalska, Kamil Kowalski",
   "license": "ISC",
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "next": "^8.1.0",
+    "node-sass": "^4.12.0",
+    "now": "^15.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

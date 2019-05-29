@@ -1,0 +1,48 @@
+.speakers {
+  text-align: center;
+  padding: 30px;
+  > h2 {
+    font-size: 33px;
+    font-weight: 300;
+    color: #813d8f;
+    margin: 15px auto;
+  }
+  hr {
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #813d8f;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  > p {
+    font-size: 25px;
+    font-weight: 200;
+    color: #132233;
+  }
+}
+
+.speaker > h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #707070;
+}
+.speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.image {
+  background-size: cover;
+  height: 174px;
+  width: 174px;
+  border-radius: 90px 90px 90px 90px;
+}
+.overlay {
+  width: 174px;
+  height: 174px;
+  border-radius: 90px 90px 90px 90px;
+  background: #813d8f;
+  position: absolute;
+  opacity: 0.44;
+}

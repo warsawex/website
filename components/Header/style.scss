@@ -1,0 +1,16 @@
+:global {
+  .menuOpen {
+    overflow-y: hidden;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 30px;
+  img {
+    height: 23px;
+    width: 128px;
+  }
+}
