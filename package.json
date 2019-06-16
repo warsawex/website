@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "classnames": "^2.2.6",
     "next": "^8.1.0",
     "node-sass": "^4.12.0",
     "now": "^15.2.0",

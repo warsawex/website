@@ -1,5 +1,6 @@
 import style from "./style.scss";
 import React from "react";
+import classNames from "classnames";
 
 class SpeakUpForm extends React.Component {
   constructor(props) {
@@ -9,12 +10,13 @@ class SpeakUpForm extends React.Component {
       email: "",
       title: "",
       description: "",
-      language: "pl"
+      language: "pl",
+      toastDisplayed: false,
+      invalidFields: []
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    // this.handleOptionChange = this.handleOptionChange.bind(this);
   }
 
   handleInputChange(event) {
@@ -25,15 +27,38 @@ class SpeakUpForm extends React.Component {
     this.setState({ [name]: value });
   }
 
-  handleOptionChange(changeEvent) {
-    this.setState({
-      selectedOption: changeEvent.target.value
-    });
-  }
-
   handleSubmit(event) {
-    console.log(this.state);
     event.preventDefault();
+    fetch("https://us-central1-warsaw-ex.cloudfunctions.net/submitTalk", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(this.state)
+    }).then(response => {
+      if (response.ok) {
+        this.setState({
+          name: "",
+          email: "",
+          title: "",
+          description: "",
+          language: "pl",
+          toastDisplayed: true,
+          invalidFields: []
+        });
+        setTimeout(() => {
+          this.setState({
+            toastDisplayed: false
+          });
+        }, 3000);
+      } else if (response.status === 400) {
+        response.json().then(body => {
+          this.setState({
+            invalidFields: body.errors.map(error => error.field)
+          });
+        });
+      }
+    });
   }
 
   render() {
@@ -48,6 +73,13 @@ class SpeakUpForm extends React.Component {
             as soon we have an available slot.
           </div>
         </div>
+        <div
+          className={classNames(style.toast, {
+            [style.visible]: this.state.toastDisplayed
+          })}
+        >
+          Thank you for your submission!
+        </div>
         <div className={style.form}>
           <form onSubmit={this.handleSubmit}>
             <div className={style.fields}>
@@ -57,7 +89,9 @@ class SpeakUpForm extends React.Component {
                 placeholder="Your name"
                 value={this.state.name}
                 onChange={this.handleInputChange}
-                className={style.box}
+                className={classNames(style.box, {
+                  [style.error]: this.state.invalidFields.includes("name")
+                })}
               />
               <input
                 type="text"
@@ -65,7 +99,9 @@ class SpeakUpForm extends React.Component {
                 placeholder="Your email"
                 value={this.state.email}
                 onChange={this.handleInputChange}
-                className={style.box}
+                className={classNames(style.box, {
+                  [style.error]: this.state.invalidFields.includes("email")
+                })}
               />
               <input
                 type="text"
@@ -73,14 +109,20 @@ class SpeakUpForm extends React.Component {
                 placeholder="Title of your talk"
                 value={this.state.title}
                 onChange={this.handleInputChange}
-                className={style.box}
+                className={classNames(style.box, {
+                  [style.error]: this.state.invalidFields.includes("title")
+                })}
               />
               <textarea
                 name="description"
                 placeholder="What will the talk be about?"
                 value={this.state.description}
                 onChange={this.handleInputChange}
-                className={style.box}
+                className={classNames(style.box, {
+                  [style.error]: this.state.invalidFields.includes(
+                    "description"
+                  )
+                })}
                 rows="5"
               />
               <p>What language will you use?</p>
