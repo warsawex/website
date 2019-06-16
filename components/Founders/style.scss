@@ -14,20 +14,39 @@
     margin-top: 15px;
     margin-bottom: 30px;
   }
-  > img {
+  .kamil > img,
+  .robert > img {
     height: 174px;
     width: 174px;
   }
-  > h2 {
+  .kamil > h2,
+  .robert > h2 {
     font-size: 20px;
     font-weight: 700;
     color: #707070;
     margin-bottom: 10px;
   }
-  > h3 {
+  .kamil > h3,
+  .robert > h3 {
     font-size: 20px;
     font-weight: 300;
     color: #707070;
     margin: 0px 0px 50px 0px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .founders {
+    hr {
+      width: 30%;
+    }
+    .thesegoys {
+      display: inline-flex;
+      justify-content: space-between;
+      > .kamil,
+      > .robert {
+        margin: 60px;
+      }
+    }
   }
 }

@@ -1,16 +1,24 @@
 import style from "./style.scss";
+import Link from "next/link";
 
 const Meetup = () => (
   <div className={style.next}>
-    <div className={style.num}>
-      <div>#</div>
-      <div>5</div>
-    </div>
-    <h2>Meetup</h2>
-    <div className={style.date}>May 28, 7:00 PM</div>
-    <div className={style.location}>
-      <img src="/static/location.svg" alt="location pin" />
-      <p>Znajomi Znajomych - Warsaw</p>
+    <img
+      src="./static/arrow_down.svg"
+      alt="arrow down"
+      className={style.arrow}
+    />
+    <div className={style.details}>
+      <div className={style.num}>
+        <div>#</div>
+        <div>5</div>
+      </div>
+      <h2>Meetup</h2>
+      <div className={style.date}>May 28, 7:00 PM</div>
+      <div className={style.location}>
+        <img src="/static/location.svg" alt="location pin" />
+        <p>Znajomi Znajomych - Warsaw</p>
+      </div>
     </div>
     <div className={style.agenda}>
       <h1>Agenda</h1>
@@ -32,6 +40,11 @@ const Meetup = () => (
           <img src="/static/phial_empty.svg" alt="empty phial" />
         </div>
       </div>
+      <button className={style.signButton}>
+        <Link href="/speak-up">
+          <a>Sign me up</a>
+        </Link>
+      </button>
     </div>
   </div>
 );

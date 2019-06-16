@@ -2,6 +2,10 @@
   background-color: #18263a;
   padding: 30px;
 
+  .desktop {
+    display: none;
+  }
+
   .warsawex_logo {
     display: flex;
     flex-direction: column;
@@ -31,9 +35,6 @@
   }
   .menu {
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   h2 {
     font-size: 15px;
@@ -41,9 +42,7 @@
     margin: 0px 0px 13px 0px;
   }
   .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: white;
   }
   .contact > h2 {
     font-weight: 600;
@@ -54,5 +53,40 @@
     font-size: 18px;
     font-weight: 500;
     margin-top: 0px;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contact {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .footer {
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .leftColumn {
+      text-align: left;
+    }
+    .rightColumn {
+      text-align: right;
+    }
+    .contact > h2 {
+      margin: 10px 0;
+    }
+    .media {
+      margin: 10px 0;
+    }
   }
 }

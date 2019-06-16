@@ -4,3 +4,9 @@
   background-color: #132233;
   margin-bottom: 5px;
 }
+
+@media screen and (min-width: 800px) {
+  .menu > div {
+    display: none;
+  }
+}

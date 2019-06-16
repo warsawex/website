@@ -38,6 +38,9 @@
   width: 174px;
   border-radius: 90px 90px 90px 90px;
 }
+.arrow {
+  display: none;
+}
 .overlay {
   width: 174px;
   height: 174px;
@@ -45,4 +48,21 @@
   background: #813d8f;
   position: absolute;
   opacity: 0.44;
+}
+
+@media screen and (min-width: 800px) {
+  .speakers {
+    > hr {
+      width: 30%;
+    }
+    .speaker {
+      display: inline-flex;
+      align-items: center;
+      margin: 50px;
+    }
+    .arrow {
+      display: flex;
+      margin: 0 auto 90px auto;
+    }
+  }
 }

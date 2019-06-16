@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.947" height="21.947" viewBox="0 0 21.947 21.947">
+  <g id="Slack_Mark_Monochrome_Black" transform="translate(-73.6 -73.6)">
+    <g id="Group_69" data-name="Group 69" transform="translate(73.6 85.163)">
+      <path id="Path_168" data-name="Path 168" d="M78.211,140.605a2.305,2.305,0,1,1-2.305-2.306h2.305Z" transform="translate(-73.6 -138.3)" fill="#132233"/>
+      <path id="Path_169" data-name="Path 169" d="M105.9,140.605a2.305,2.305,0,1,1,4.611,0v5.773a2.305,2.305,0,1,1-4.611,0Z" transform="translate(-100.127 -138.3)" fill="#132233"/>
+    </g>
+    <g id="Group_70" data-name="Group 70" transform="translate(73.6 73.6)">
+      <path id="Path_170" data-name="Path 170" d="M108.205,78.211a2.305,2.305,0,1,1,2.305-2.305v2.305Z" transform="translate(-100.127 -73.6)" fill="#132233"/>
+      <path id="Path_171" data-name="Path 171" d="M81.678,105.9a2.305,2.305,0,1,1,0,4.611H75.905a2.305,2.305,0,1,1,0-4.611Z" transform="translate(-73.6 -100.127)" fill="#132233"/>
+    </g>
+    <g id="Group_71" data-name="Group 71" transform="translate(85.163 73.6)">
+      <path id="Path_172" data-name="Path 172" d="M170.6,108.205a2.305,2.305,0,1,1,2.305,2.305H170.6Z" transform="translate(-164.827 -100.127)" fill="#132233"/>
+      <path id="Path_173" data-name="Path 173" d="M142.911,81.678a2.305,2.305,0,1,1-4.611,0V75.905a2.305,2.305,0,1,1,4.611,0Z" transform="translate(-138.3 -73.6)" fill="#132233"/>
+    </g>
+    <g id="Group_72" data-name="Group 72" transform="translate(85.163 85.163)">
+      <path id="Path_174" data-name="Path 174" d="M140.605,170.6a2.305,2.305,0,1,1-2.306,2.305V170.6Z" transform="translate(-138.3 -164.827)" fill="#132233"/>
+      <path id="Path_175" data-name="Path 175" d="M140.605,142.911a2.305,2.305,0,1,1,0-4.611h5.773a2.305,2.305,0,1,1,0,4.611Z" transform="translate(-138.3 -138.3)" fill="#132233"/>
+    </g>
+  </g>
+</svg>
