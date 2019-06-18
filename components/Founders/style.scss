@@ -14,20 +14,17 @@
     margin-top: 15px;
     margin-bottom: 30px;
   }
-  .kamil > img,
-  .robert > img {
+  .founder > img {
     height: 174px;
     width: 174px;
   }
-  .kamil > h2,
-  .robert > h2 {
+  .founder > h2 {
     font-size: 20px;
     font-weight: 700;
     color: #707070;
     margin-bottom: 10px;
   }
-  .kamil > h3,
-  .robert > h3 {
+  .founder > h3 {
     font-size: 20px;
     font-weight: 300;
     color: #707070;
@@ -43,8 +40,7 @@
     .thesegoys {
       display: inline-flex;
       justify-content: space-between;
-      > .kamil,
-      > .robert {
+      > .founder {
         margin: 60px;
       }
     }

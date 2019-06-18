@@ -14,7 +14,6 @@ class SpeakUpForm extends React.Component {
 
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    // this.handleOptionChange = this.handleOptionChange.bind(this);
   }
 
   handleInputChange(event) {
@@ -25,14 +24,7 @@ class SpeakUpForm extends React.Component {
     this.setState({ [name]: value });
   }
 
-  handleOptionChange(changeEvent) {
-    this.setState({
-      selectedOption: changeEvent.target.value
-    });
-  }
-
   handleSubmit(event) {
-    console.log(this.state);
     event.preventDefault();
   }
 
