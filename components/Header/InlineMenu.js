@@ -4,16 +4,16 @@ import Link from "next/link";
 const InlineMenu = () => (
   <div className={style.inlineMenu}>
     <div className={style.menu}>
-      <Link href="/speak-up">
-        <h2>
+      <h2>
+        <Link href="/speak-up">
           <a>Speak Up</a>
-        </h2>
-      </Link>
-      <Link href="/about-us">
-        <h2>
+        </Link>
+      </h2>
+      <h2>
+        <Link href="/about-us">
           <a>About Us</a>
-        </h2>
-      </Link>
+        </Link>
+      </h2>
     </div>
     <div className={style.media}>
       <a href="https://www.facebook.com/warsawex.meetup/" target="_blank">

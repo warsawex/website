@@ -40,6 +40,13 @@
     font-size: 15px;
     font-weight: 500;
     margin: 0px 0px 13px 0px;
+    a:link {
+      color: white;
+      text-decoration: none;
+    }
+    a:visited {
+      color: white;
+    }
   }
   .contact {
     color: white;
