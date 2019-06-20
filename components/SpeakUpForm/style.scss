@@ -22,6 +22,21 @@
       margin-bottom: 35px;
     }
   }
+  .toast {
+    position: absolute;
+    top: -100px;
+    padding: 20px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 3px 5px #4c409299;
+    color: white;
+    font-weight: 700;
+    background-image: linear-gradient(#4c4092, #8c3c8f);
+    z-index: 1;
+    transition: top 0.3s ease;
+    &.visible {
+      top: 100px;
+    }
+  }
   .fields {
     display: flex;
     flex-direction: column;
@@ -34,6 +49,9 @@
       opacity: 0.44;
       margin-bottom: 25px;
       padding: 15px;
+      &.error {
+        border-color: red;
+      }
     }
     > p {
       font-size: 18px;
