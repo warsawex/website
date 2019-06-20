@@ -1,10 +1,10 @@
 import React from "react";
-import Link from "next/link";
 import Router from "next/router";
 import style from "./style.scss";
-
 import MenuToggle from "../MenuToggle";
 import Menu from "../Menu";
+import Logo from "./Logo";
+import InlineMenu from "./InlineMenu";
 
 class Header extends React.Component {
   constructor(props) {
@@ -39,13 +39,14 @@ class Header extends React.Component {
   render() {
     return (
       <div className={style.header}>
-        <Link href="/">
-          <a>
-            <img src="/static/warsawex-logo.svg" alt="warsaw.ex logo" />
-          </a>
-        </Link>
-        <MenuToggle onClick={this.toggleMenu} />
-        {this.state.menuVisible && <Menu />}
+        <div className={style.desktop}>
+          <Logo />
+          <InlineMenu />
+        </div>
+        <div className={style.mobile}>
+          <MenuToggle onClick={this.toggleMenu} />
+          {this.state.menuVisible && <Menu />}
+        </div>
       </div>
     );
   }

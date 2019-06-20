@@ -14,20 +14,54 @@
     margin-top: 15px;
     margin-bottom: 30px;
   }
-  > img {
+  .founder > img {
     height: 174px;
     width: 174px;
   }
-  > h2 {
+  .founder > h2 {
     font-size: 20px;
     font-weight: 700;
     color: #707070;
     margin-bottom: 10px;
   }
-  > h3 {
+  .founder > h3 {
     font-size: 20px;
     font-weight: 300;
     color: #707070;
     margin: 0px 0px 50px 0px;
+  }
+
+  .founder > .container {
+    height: 174px;
+    width: 174px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgba(170, 19, 245, 0.724);
+    display: inline-flex;
+    img {
+      object-fit: cover;
+      position: relative;
+      height: 174px;
+      width: 174px;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      opacity: 0.8;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .founders {
+    hr {
+      width: 30%;
+    }
+    .thesegoys {
+      display: inline-flex;
+      justify-content: space-between;
+      > .founder {
+        margin: 60px;
+      }
+    }
   }
 }

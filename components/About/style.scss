@@ -3,39 +3,91 @@
   padding: 30px;
   text-align: center;
 
-  > h1 {
-    font-size: 50px;
-    font-weight: 700;
-    color: #813d8f;
-  }
-  > img {
-    height: 400px;
-    width: auto;
-    margin-bottom: 120px;
-  }
-  > p {
+  p {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
     color: #000000;
     margin-bottom: 25px;
   }
-  > .emphasis {
-    font-size: 24px;
-    font-weight: 200;
-    color: #132233;
+  .banner {
+    .headers > h1 {
+      font-size: 50px;
+      font-weight: 700;
+      color: #813d8f;
+    }
+    .headers > .emphasis {
+      font-size: 24px;
+      font-weight: 200;
+      color: #132233;
+    }
+    > img {
+      height: 400px;
+      width: auto;
+      margin-bottom: 120px;
+    }
   }
-  > h2 {
-    font-size: 33px;
-    font-weight: 300;
-    color: #813d8f;
-    margin: 15px auto;
+  .arrow {
+    display: none;
   }
-  > hr {
-    border-style: solid;
-    border-width: 0.5px;
-    border-color: #813d8f;
-    margin-top: 15px;
-    margin-bottom: 30px;
+  .story {
+    > h2 {
+      font-size: 33px;
+      font-weight: 300;
+      color: #813d8f;
+      margin: 15px auto;
+    }
+    > hr {
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: #813d8f;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .about {
+    .banner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 120px;
+      .headers {
+        text-align: left;
+        margin-right: 30px;
+        > .emphasis {
+          font-size: 27px;
+        }
+        > p {
+          font-size: 18px;
+        }
+      }
+      > img {
+        margin-bottom: 0px;
+      }
+    }
+    .arrow {
+      display: flex;
+      margin: 0 auto 90px auto;
+    }
+    .story {
+      display: flex;
+      flex-direction: column;
+      > h2,
+      > p {
+        text-align: center;
+        margin: 15px auto;
+        max-width: 60%;
+      }
+      > p {
+        font-size: 18px;
+      }
+      > hr {
+        width: 30%;
+      }
+    }
   }
 }
