@@ -23,7 +23,7 @@ const Meetup = () => (
         <h1>Agenda</h1>
         <hr />
         <div className={style.talks}>
-          <h2>Building observable Elixir services [EN]</h2>
+          <h2>Building observable Elixir services</h2>
           <h3>Speaker: Paweł Szafran</h3>
           <h3>Language: English</h3>
           <p>
@@ -39,7 +39,7 @@ const Meetup = () => (
             <img src="/static/phial_empty.svg" alt="empty phial" />
             <img src="/static/phial_empty.svg" alt="empty phial" />
           </div>
-          <h2>Beware of dragons! The charms of remote work [PL]</h2>
+          <h2>Beware of dragons! The charms of remote work</h2>
           <h3>Speaker: Jan Ziniewicz & Łukasz Łażewski</h3>
           <h3>Language: Polish</h3>
           <p>

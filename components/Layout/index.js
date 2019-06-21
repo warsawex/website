@@ -13,12 +13,7 @@ const Layout = props => (
       <link
         rel="shortcut icon"
         type="image/png"
-        href="/static/warsawex-logo-transparent-white.png"
-      />
-      <link
-        rel="shortcut icon"
-        type="image/png"
-        href="http://localhost:3000/favicon.png"
+        href="/static/favicon.png"
       />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>

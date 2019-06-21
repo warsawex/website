@@ -1,12 +1,12 @@
 import style from "./style.scss";
 
 const Sponsors = () => (
-  <div className={style.patrons}>
-    <h1>Our Patrons</h1>
+  <div className={style.sponsors}>
+    <h1>Our Sponsors</h1>
     <hr />
     <div className={style.logos}>
-      <img src="/static/fresha.png" />
-      <img src="/static/shedul.jpeg" />
+      <img src="/static/fresha-logo.svg" />
+      <img src="/static/shedul-logo.svg" />
     </div>
   </div>
 );
