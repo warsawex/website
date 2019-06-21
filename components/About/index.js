@@ -6,7 +6,7 @@ const About = () => (
       <div className={style.headers}>
         <h1>About Us</h1>
         <p className={style.emphasis}>
-          Meet Warsaw.ex founders Discover our story
+          Meet warsaw.ex founders and discover our story
         </p>
         <p>Our story begins in November 2018…</p>
       </div>

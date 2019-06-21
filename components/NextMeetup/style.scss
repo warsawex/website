@@ -120,15 +120,17 @@
         .num {
           display: inline-flex;
           flex-wrap: nowrap;
+          margin-bottom: 10px;
           > :first-child {
             font-size: 145px;
             font-weight: 700;
             margin-right: 18px;
+            margin-top: 12px;
           }
           > :last-child {
             font-size: 210px;
             font-weight: 900;
-            margin: 0px;
+            margin-top: 12px;
           }
         }
         > h2 {
@@ -145,7 +147,7 @@
         justify-content: left;
         text-align: left;
         h1 {
-          font-size: 20px;
+          font-size: 24px;
           font-weight: 200;
           margin-top: 0px;
           margin-bottom: 15px;
@@ -154,7 +156,7 @@
           display: none;
         }
         h2 {
-          font-size: 28px;
+          font-size: 22px;
           font-weight: bold;
           margin-bottom: 10px;
         }
@@ -186,6 +188,29 @@
         }
         > button > a:visited {
           color: white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .next {
+    .container {
+      .details {
+        .num {
+          > :first-child {
+            font-size: 160px;
+          }
+          > :last-child {
+            font-size: 230px;
+          }
+        }
+        > h2 {
+          font-size: 75px;
+        }
+        .date {
+          font-size: 26px;
         }
       }
     }

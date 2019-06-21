@@ -32,22 +32,22 @@
   align-items: center;
   margin-top: 50px;
 }
-.image {
-  background-size: cover;
+.container {
+  background-color: rgba(170, 19, 245, 0.724);
   height: 174px;
   width: 174px;
   border-radius: 90px 90px 90px 90px;
+  > .image {
+    width: 174px;
+    height: 174px;
+    border-radius: 90px 90px 90px 90px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: 0.8;
+  }
 }
 .arrow {
   display: none;
-}
-.overlay {
-  width: 174px;
-  height: 174px;
-  border-radius: 90px 90px 90px 90px;
-  background: #813d8f;
-  position: absolute;
-  opacity: 0.44;
 }
 
 @media screen and (min-width: 800px) {
