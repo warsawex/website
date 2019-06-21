@@ -1,5 +1,5 @@
 {
-  "alias": "warsawex.org",
+  "alias": "www.warsawex.org",
   "builds": [
     {
       "src": "package.json",
