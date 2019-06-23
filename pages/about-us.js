@@ -6,7 +6,7 @@ import Founders from "../components/Founders";
 import SeeUs from "../components/SeeUs";
 
 const AboutUs = () => (
-  <Layout>
+  <Layout title="About Us">
     <Header />
     <About />
     <Founders />

@@ -5,7 +5,7 @@ import SpeakUpForm from "../components/SpeakUpForm";
 import PreviousSpeakers from "../components/PreviousSpeakers";
 
 const SpeakUp = () => (
-  <Layout>
+  <Layout title="Speak Up">
     <Header />
     <SpeakUpForm />
     <PreviousSpeakers />
