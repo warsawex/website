@@ -1,0 +1,21 @@
+{
+  "number": 6,
+  "date": "2019-06-24 19:00:00",
+  "place": "Znajomi Znajomych",
+  "talks": [
+    {
+      "title": "Building observable Elixir services",
+      "speaker": "Paweł Szafran",
+      "language": "English",
+      "description": "When you run Elixir services at scale, how can you tell how well they are performing? Let's explore practical tips to increase the observability of Elixir services, with some live examples",
+      "level": 3
+    },
+    {
+      "title": "Beware of dragons! The charms of remote work",
+      "speaker": "Jan Ziniewicz & Łukasz Łażewski",
+      "language": "Polish",
+      "description": "Jan and Łukasz will discuss working remotely from an employee and employers perspective. What are the common pitfalls and how to avoid them. What rules do they recommend to introduce to make this kind of workflow work.",
+      "level": 3
+    }
+  ]
+}

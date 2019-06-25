@@ -1,5 +1,16 @@
 import style from "./style.scss";
 import Link from "next/link";
+import meetup from "./meetup.json";
+
+var options = {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+  hour: "numeric",
+  minute: "numeric"
+};
+const date = new Date(meetup.date);
+var dateString = new Intl.DateTimeFormat("en-GB", options).format(date);
 
 const Meetup = () => (
   <div className={style.next}>
@@ -10,53 +21,43 @@ const Meetup = () => (
       <div className={style.details}>
         <div className={style.num}>
           <div>#</div>
-          <div>6</div>
+          <div>{meetup.number}</div>
         </div>
         <h2>Meetup</h2>
-        <div className={style.date}>June 24, 7:00 PM</div>
+        <div className={style.date}>{dateString}</div>
         <div className={style.location}>
           <img src="/static/location.svg" alt="location pin" />
-          <p>Znajomi Znajomych - Warsaw</p>
+          <p>{meetup.place}</p>
         </div>
       </div>
       <div className={style.agenda}>
         <h1>Agenda</h1>
         <hr />
-        <div className={style.talks}>
-          <h2>Building observable Elixir services</h2>
-          <h3>Speaker: Paweł Szafran</h3>
-          <h3>Language: English</h3>
-          <p>
-            When you run Elixir services at scale, how can you tell how well
-            they are performing? Let's explore practical tips to increase the
-            observability of Elixir services, with some live examples.
-          </p>
-          <div className={style.level}>
-            <h3>Level:</h3>
-            <img src="/static/phial_full.svg" alt="full phial" />
-            <img src="/static/phial_full.svg" alt="full phial" />
-            <img src="/static/phial_full.svg" alt="full phial" />
-            <img src="/static/phial_empty.svg" alt="empty phial" />
-            <img src="/static/phial_empty.svg" alt="empty phial" />
+        {meetup.talks.map((talk, index) => (
+          <div key={index} className={style.talk}>
+            <h2>{talk.title}</h2>
+            <h3>Speaker: {talk.speaker}</h3>
+            <h3>Language: {talk.language}</h3>
+            <p>{talk.description}</p>
+            <div className={style.level}>
+              <h3>Level:</h3>
+              {[...Array(talk.level).keys()].map(index => (
+                <img
+                  key={index}
+                  src="/static/phial_full.svg"
+                  alt="full phial"
+                />
+              ))}
+              {[...Array(5 - talk.level).keys()].map(index => (
+                <img
+                  key={index}
+                  src="/static/phial_empty.svg"
+                  alt="empty phial"
+                />
+              ))}
+            </div>
           </div>
-          <h2>Beware of dragons! The charms of remote work</h2>
-          <h3>Speaker: Jan Ziniewicz & Łukasz Łażewski</h3>
-          <h3>Language: Polish</h3>
-          <p>
-            Jan and Łukasz will discuss working remotely from an employee and
-            employers perspective. What are the common pitfalls and how to avoid
-            them. What rules do they recommend to introduce to make this kind of
-            workflow work.
-          </p>
-          <div className={style.level}>
-            <h3>Level:</h3>
-            <img src="/static/phial_full.svg" alt="full phial" />
-            <img src="/static/phial_full.svg" alt="full phial" />
-            <img src="/static/phial_full.svg" alt="full phial" />
-            <img src="/static/phial_empty.svg" alt="empty phial" />
-            <img src="/static/phial_empty.svg" alt="empty phial" />
-          </div>
-        </div>
+        ))}
         <button className={style.signButton}>
           <Link href="/speak-up">
             <a>Sign me up</a>
