@@ -1,5 +1,6 @@
 import style from "./style.scss";
 import Speaker from "./Speaker";
+import speakers from "./speakers.json";
 
 const PreviousSpeakers = () => (
   <div className={style.speakers}>
@@ -11,19 +12,9 @@ const PreviousSpeakers = () => (
     <h2>Previous Speakers</h2>
     <hr />
     <p>See other brave alchemists who shared their knowledge</p>
-    <Speaker name="Łukasz Łażewski" avatar="/static/łukasz_łażewski.jpeg" />
-    <Speaker name="Jan Ziniewicz" avatar="/static/jan_ziniewicz.jpeg" />
-    <Speaker
-      name="Bartek Kruszczyński"
-      avatar="/static/bartek_kruszczyński.jpg"
-    />
-    <Speaker name="Michał Muskała" avatar="/static/michał_muskała.jpeg" />
-    <Speaker name="Kamil Pluta" avatar="/static/kamil_pluta.jpeg" />
-    <Speaker name="Andriy Mykulyak" avatar="/static/andriy_mykulyak.jpeg" />
-    <Speaker name="Hubert Łępicki" avatar="/static/hubert_łępicki.jpeg" />
-    <Speaker name="Kamil Kowalski" avatar="/static/kamil_kowalski.jpg" />
-    <Speaker name="Artur Sulej" avatar="/static/artur_sulej.jpeg" />
-    <Speaker name="Piotr Rybarczyk" avatar="/static/piotr_rybarczyk.jpeg" />
+    {speakers.map((speaker, index) => (
+      <Speaker key={index} name={speaker.name} avatar={speaker.avatar} />
+    ))}
   </div>
 );
 
