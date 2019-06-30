@@ -1,0 +1,15 @@
+[
+  { "name": "Łukasz Łażewski", "avatar": "/static/łukasz_łażewski.jpeg" },
+  { "name": "Jan Ziniewicz", "avatar": "/static/jan_ziniewicz.jpeg" },
+  {
+    "name": "Bartek Kruszczyński",
+    "avatar": "/static/bartek_kruszczyński.jpg"
+  },
+  { "name": "Michał Muskała", "avatar": "/static/michał_muskała.jpeg" },
+  { "name": "Kamil Pluta", "avatar": "/static/kamil_pluta.jpeg" },
+  { "name": "Andriy Mykulyak", "avatar": "/static/andriy_mykulyak.jpeg" },
+  { "name": "Hubert Łępicki", "avatar": "/static/hubert_łępicki.jpeg" },
+  { "name": "Kamil Kowalski", "avatar": "/static/kamil_kowalski.jpg" },
+  { "name": "Artur Sulej", "avatar": "/static/artur_sulej.jpeg" },
+  { "name": "Piotr Rybarczyk", "avatar": "/static/piotr_rybarczyk.jpeg" }
+]
