@@ -27,7 +27,11 @@ const Meetup = () => (
         <div className={style.date}>{dateString}</div>
         <div className={style.location}>
           <img src="/static/location.svg" alt="location pin" />
-          <p>{meetup.place}</p>
+          <p>
+            <a href={meetup.place.link} target="_blank">
+              {meetup.place.name}
+            </a>
+          </p>
         </div>
       </div>
       <div className={style.agenda}>
