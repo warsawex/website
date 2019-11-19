@@ -10,14 +10,14 @@
       "title": "Mocks in Elixir",
       "speaker": "Andriy Mykulyak",
       "language": "Polish",
-      "description": "This talk is about mocks and mocking techniques in Elixir. The truth is, when we (software engineers) hear \"mock\", we almost unconciously start thinking about writing tests. But also the truth is, that mocks can be used in many more situations and with greater effects. When ? How ? Come and see for yourselves.",
+      "description": "\"This talk is about mocks and mocking techniques in Elixir. The truth is, when we (software engineers) hear \"mock\", we almost unconsciously start thinking about writing tests. But also the truth is, that mocks can be used in many more situations and with greater effects. When? How? Come and see for yourselves.\"",
       "level": 4
     },
     {
       "title": "Phoenix on Kubernetes",
       "speaker": "Bartek Kruszczyński",
       "language": "Polish",
-      "description": "Bartek will talk about proccess of deployment of a Phoenix application using Kubernetes.",
+      "description": "Bartek will talk about the process of deploying a Phoenix application using Kubernetes.",
       "level": 3
     }
   ]
