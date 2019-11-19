@@ -1,20 +1,23 @@
 {
-  "number": 6,
-  "date": "2019-06-24T19:00:00Z",
-  "place": "Znajomi Znajomych",
+  "number": 7,
+  "date": "2019-11-26T19:00:00+01:00",
+  "place": {
+    "link": "https://goo.gl/maps/T18wEpHGt65rDqk97",
+    "name": "HubHub Nowogrodzka Square"
+  },
   "talks": [
     {
-      "title": "Building observable Elixir services",
-      "speaker": "Paweł Szafran",
-      "language": "English",
-      "description": "When you run Elixir services at scale, how can you tell how well they are performing? Let's explore practical tips to increase the observability of Elixir services, with some live examples",
-      "level": 3
+      "title": "Mocks in Elixir",
+      "speaker": "Andriy Mykulyak",
+      "language": "Polish",
+      "description": "\"This talk is about mocks and mocking techniques in Elixir. The truth is, when we (software engineers) hear \"mock\", we almost unconsciously start thinking about writing tests. But also the truth is, that mocks can be used in many more situations and with greater effects. When? How? Come and see for yourselves.\"",
+      "level": 4
     },
     {
-      "title": "Beware of dragons! The charms of remote work",
-      "speaker": "Jan Ziniewicz & Łukasz Łażewski",
+      "title": "Phoenix on Kubernetes",
+      "speaker": "Bartek Kruszczyński",
       "language": "Polish",
-      "description": "Jan and Łukasz will discuss working remotely from an employee and employers perspective. What are the common pitfalls and how to avoid them. What rules do they recommend to introduce to make this kind of workflow work.",
+      "description": "Bartek will talk about the process of deploying a Phoenix application using Kubernetes.",
       "level": 3
     }
   ]
