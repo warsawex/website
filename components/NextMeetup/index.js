@@ -39,7 +39,7 @@ const Meetup = () => (
         <hr />
         {meetup.talks.map((talk, index) => (
           <div key={index} className={style.talk}>
-            <h2>{talk.title}</h2>
+            <h2>👉{talk.title}</h2>
             <h3>Speaker: {talk.speaker}</h3>
             <h3>Language: {talk.language}</h3>
             <p>{talk.description}</p>
@@ -62,6 +62,9 @@ const Meetup = () => (
             </div>
           </div>
         ))}
+        <div className={style.talk}>
+          <h2>👉Lightning Talks / Bring Your Own Problem</h2>
+        </div>
         <button className={style.signButton}>
           <Link href="/speak-up">
             <a>Sign me up</a>
