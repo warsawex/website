@@ -6,9 +6,5 @@
       "use": "@now/next"
     }
   ],
-  "regions": [
-    "bru",
-    "lhr"
-  ],
   "version": 2
 }
