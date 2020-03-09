@@ -32,8 +32,5 @@
   .sponsors > .logos {
     display: inline-flex;
     flex-direction: row;
-    :first-child {
-      margin-right: 100px;
-    }
   }
 }
