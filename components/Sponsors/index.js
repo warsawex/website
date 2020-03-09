@@ -6,7 +6,6 @@ const Sponsors = () => (
     <hr />
     <div className={style.logos}>
       <img src="/static/fresha-logo.svg" />
-      <img src="/static/shedul-logo.svg" />
     </div>
   </div>
 );
