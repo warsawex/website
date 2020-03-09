@@ -10,7 +10,7 @@ const Founders = () => (
           <img src="/static/kamil_kowalski.jpg" alt="photo of Kamil Kowalski" />
         </div>
         <h2>Kamil Kowalski</h2>
-        <h3>Engineering Manager at Shedul</h3>
+        <h3>Engineering Manager at Fresha</h3>
       </div>
       <div className={style.founder}>
         <div className={style.container}>
