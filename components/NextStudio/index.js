@@ -7,7 +7,8 @@ var options = {
     month: "long",
     day: "numeric",
     hour: "numeric",
-    minute: "numeric"
+    minute: "numeric",
+    timeZoneName: "short"
 };
 const date = new Date(studio.date);
 var dateString = new Intl.DateTimeFormat("en-GB", options).format(date);
@@ -26,10 +27,10 @@ const Studio = () => (
                 <h2>Studio</h2>
                 <div className={style.date}>{dateString}</div>
                 <div className={style.location}>
-                    <h3>Tune at:</h3>
+                    <h3>Tune in at:</h3>
                     <a href={studio.youtube.link} target="_blank">
-                        https://youtu.be/NZn_wnEpoFc
-                        </a>
+                        {studio.youtube.link}
+                    </a>
                 </div>
             </div>
             <div className={style.agenda}>
