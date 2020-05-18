@@ -1,0 +1,169 @@
+.next {
+    text-align: center;
+    padding: 30px;
+    .num {
+      display: inline-flex;
+      flex-wrap: nowrap;
+      padding: 0px;
+      margin: 0px;
+      line-height: 140px;
+      > :first-child {
+        font-size: 125px;
+        font-weight: 700;
+        margin-right: 18px;
+      }
+      > :last-child {
+        font-size: 180px;
+        font-weight: 900;
+        margin: 0px;
+      }
+    }
+    div > .num,
+    h2 {
+      color: #813d8f;
+      opacity: 0.84;
+    }
+    h2 {
+      font-size: 54px;
+      font-weight: 600;
+      margin-top: 0px;
+    }
+    .date {
+      font-size: 27px;
+      font-weight: 600;
+      color: #132233;
+      margin-top: 28px;
+    }
+    .location {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .location a {
+      color: #707070;
+      text-decoration: none;
+    }
+    .agenda > h1 {
+      font-size: 40px;
+      font-weight: 300;
+      color: #132233;
+      margin-bottom: 0px;
+    }
+    .agenda > p {
+        margin-bottom: 25px;
+    }
+    .agenda > p > span {
+        color: #707070;
+        font-weight: 700;
+    }
+    hr {
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: #813d8f;
+      margin-top: 20px;
+      margin-bottom: 35px;
+    }
+    .topic > h2{
+      opacity: 1;
+      margin-bottom: 12px;
+        color: #132233;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .signButton,
+    .arrow {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    .next {
+      display: flex;
+      flex-direction: column;
+      .arrow {
+        display: flex;
+        width: 100%;
+        order: 0;
+        justify-content: space-around;
+        margin-bottom: 90px;
+      }
+      .container {
+        display: inline-flex;
+        justify-content: space-around;
+        > .details {
+          order: 1;
+          width: 45%;
+          .num {
+            display: inline-flex;
+            flex-wrap: nowrap;
+            margin-bottom: 10px;
+            > :first-child {
+              font-size: 145px;
+              font-weight: 700;
+              margin-right: 18px;
+              margin-top: 12px;
+            }
+            > :last-child {
+              font-size: 210px;
+              font-weight: 900;
+              margin-top: 12px;
+            }
+          }
+          > h2 {
+            font-size: 60px;
+            margin-top: 0px;
+          }
+          .date {
+            font-size: 20px;
+          }
+        }
+        > .agenda {
+          order: 2;
+          width: 40%;
+          justify-content: left;
+          text-align: left;
+          h1 {
+            font-size: 24px;
+            font-weight: 200;
+            margin-top: 0px;
+            margin-bottom: 15px;
+          }
+          hr {
+            display: none;
+          }
+          .details > h2 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+          .agenda p {
+            margin: 10px 0px;
+          }
+          h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+          }
+          .signButton {
+            background-image: linear-gradient(#4c4092, #8c3c8f);
+            color: white;
+            font-weight: 700;
+            border: none;
+            border-radius: 3px;
+            width: 40%;
+            height: 54px;
+            font-size: 18px;
+            display: block;
+            margin: 35px 0;
+          }
+          > button > a:link {
+            color: white;
+            text-decoration: none;
+          }
+          > button > a:visited {
+            color: white;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,12 @@
+{
+    "number": 2,
+    "date": "2020-05-19T19:00:00+02:00",
+    "youtube": {
+        "link": "https://youtu.be/NZn_wnEpoFc"
+    },
+    "topics": [
+        "Glamorous Toolkit and the BEAM",
+        "Lumen and WebAssembly",
+        "Authentication and Security in Phoenix"
+    ]
+}
