@@ -1,5 +1,9 @@
 .header {
   padding: 30px;
+
+  img:hover {
+    opacity: 0.6;
+  }
 }
 
 @media screen and (max-width: 799px) {
@@ -54,6 +58,9 @@
             }
             a:visited {
               color: #132233;
+            }
+            a:hover {
+              color: rgb(129, 61, 143);
             }
           }
         }
