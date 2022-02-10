@@ -15,7 +15,7 @@
     "@zeit/next-sass": "^1.0.1",
     "classnames": "^2.2.6",
     "next": "^9.5.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "now": "^15.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
