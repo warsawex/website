@@ -1,4 +1,4 @@
-import style from "./style.scss";
+import styles from "./SpeakUp.module.scss";
 import React from "react";
 import classNames from "classnames";
 
@@ -12,7 +12,7 @@ class SpeakUpForm extends React.Component {
       description: "",
       language: "pl",
       toastDisplayed: false,
-      invalidFields: []
+      invalidFields: [],
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -32,10 +32,10 @@ class SpeakUpForm extends React.Component {
     fetch("https://us-central1-warsaw-ex.cloudfunctions.net/submitTalk", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(this.state)
-    }).then(response => {
+      body: JSON.stringify(this.state),
+    }).then((response) => {
       if (response.ok) {
         this.setState({
           name: "",
@@ -44,17 +44,17 @@ class SpeakUpForm extends React.Component {
           description: "",
           language: "pl",
           toastDisplayed: true,
-          invalidFields: []
+          invalidFields: [],
         });
         setTimeout(() => {
           this.setState({
-            toastDisplayed: false
+            toastDisplayed: false,
           });
         }, 3000);
       } else if (response.status === 400) {
-        response.json().then(body => {
+        response.json().then((body) => {
           this.setState({
-            invalidFields: body.errors.map(error => error.field)
+            invalidFields: body.errors.map((error) => error.field),
           });
         });
       }
@@ -63,34 +63,34 @@ class SpeakUpForm extends React.Component {
 
   render() {
     return (
-      <div className={style.speakUp}>
-        <div className={style.headers}>
+      <div className={styles.speakUp}>
+        <div className={styles.headers}>
           <h1>Speak Up</h1>
           <h2>Become our next speaker</h2>
-          <div className={style.lead}>
+          <div className={styles.lead}>
             Got an idea for an interesting topic? Want to improve your
             presentation skills? Just fill up the form and we’ll get back to you
             as soon we have an available slot.
           </div>
         </div>
         <div
-          className={classNames(style.toast, {
-            [style.visible]: this.state.toastDisplayed
+          className={classNames(styles.toast, {
+            [styles.visible]: this.state.toastDisplayed,
           })}
         >
           Thank you for your submission!
         </div>
-        <div className={style.form}>
+        <div className={styles.form}>
           <form onSubmit={this.handleSubmit}>
-            <div className={style.fields}>
+            <div className={styles.fields}>
               <input
                 type="text"
                 name="name"
                 placeholder="Your name"
                 value={this.state.name}
                 onChange={this.handleInputChange}
-                className={classNames(style.box, {
-                  [style.error]: this.state.invalidFields.includes("name")
+                className={classNames(styles.box, {
+                  [styles.error]: this.state.invalidFields.includes("name"),
                 })}
               />
               <input
@@ -99,8 +99,8 @@ class SpeakUpForm extends React.Component {
                 placeholder="Your email"
                 value={this.state.email}
                 onChange={this.handleInputChange}
-                className={classNames(style.box, {
-                  [style.error]: this.state.invalidFields.includes("email")
+                className={classNames(styles.box, {
+                  [styles.error]: this.state.invalidFields.includes("email"),
                 })}
               />
               <input
@@ -109,8 +109,8 @@ class SpeakUpForm extends React.Component {
                 placeholder="Title of your talk"
                 value={this.state.title}
                 onChange={this.handleInputChange}
-                className={classNames(style.box, {
-                  [style.error]: this.state.invalidFields.includes("title")
+                className={classNames(styles.box, {
+                  [styles.error]: this.state.invalidFields.includes("title"),
                 })}
               />
               <textarea
@@ -118,15 +118,14 @@ class SpeakUpForm extends React.Component {
                 placeholder="What will the talk be about?"
                 value={this.state.description}
                 onChange={this.handleInputChange}
-                className={classNames(style.box, {
-                  [style.error]: this.state.invalidFields.includes(
-                    "description"
-                  )
+                className={classNames(styles.box, {
+                  [styles.error]:
+                    this.state.invalidFields.includes("description"),
                 })}
                 rows="5"
               />
               <p>What language will you use?</p>
-              <label className={style.container}>
+              <label className={styles.container}>
                 Polish
                 <input
                   type="radio"
@@ -135,9 +134,9 @@ class SpeakUpForm extends React.Component {
                   onChange={this.handleInputChange}
                   checked={this.state.language === "pl"}
                 />
-                <span className={style.checkmark} />
+                <span className={styles.checkmark} />
               </label>
-              <label className={style.container}>
+              <label className={styles.container}>
                 English
                 <input
                   type="radio"
@@ -146,10 +145,10 @@ class SpeakUpForm extends React.Component {
                   onChange={this.handleInputChange}
                   checked={this.state.language === "en"}
                 />
-                <span className={style.checkmark} />
+                <span className={styles.checkmark} />
               </label>
             </div>
-            <input type="submit" value="Submit" className={style.submit} />
+            <input type="submit" value="Submit" className={styles.submit} />
           </form>
         </div>
       </div>

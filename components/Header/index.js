@@ -1,6 +1,6 @@
 import React from "react";
 import Router from "next/router";
-import style from "./style.scss";
+import styles from "./Header.module.scss";
 import MenuToggle from "../MenuToggle";
 import Menu from "../Menu";
 import Logo from "./Logo";
@@ -27,8 +27,8 @@ class Header extends React.Component {
   }
 
   toggleMenu() {
-    this.setState(state => ({
-      menuVisible: !state.menuVisible
+    this.setState((state) => ({
+      menuVisible: !state.menuVisible,
     }));
   }
 
@@ -38,12 +38,12 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className={style.header}>
-        <div className={style.desktop}>
+      <div className={styles.header}>
+        <div className={styles.desktop}>
           <Logo />
           <InlineMenu />
         </div>
-        <div className={style.mobile}>
+        <div className={styles.mobile}>
           <MenuToggle onClick={this.toggleMenu} />
           {this.state.menuVisible && <Menu />}
         </div>

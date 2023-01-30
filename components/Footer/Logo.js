@@ -1,11 +1,11 @@
-import style from "./style.scss";
+import styles from "./Footer.module.scss";
 
 const Logo = () => (
-  <div className={style.warsawex_logo}>
-    <img className={style.symbol} src="/static/warsawex-symbol.svg" />
+  <div className={styles.warsawex_logo}>
+    <img className={styles.symbol} src="/warsawex-symbol.svg" />
     <img
-      className={style.logo}
-      src="/static/warsawex-logo-white.svg"
+      className={styles.logo}
+      src="/warsawex-logo-white.svg"
       alt="warsaw.ex meetup logo white"
     />
   </div>

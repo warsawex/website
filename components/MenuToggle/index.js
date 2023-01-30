@@ -1,7 +1,7 @@
-import style from "./style.scss";
+import styles from "./MenuToggle.module.scss";
 
-const MenuToggle = props => (
-  <div className={style.menu} onClick={props.onClick}>
+const MenuToggle = (props) => (
+  <div className={styles.menu} onClick={props.onClick}>
     <div />
     <div />
     <div />

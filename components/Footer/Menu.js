@@ -1,20 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import style from './style.scss';
-import Link from 'next/link';
+import styles from "./Footer.module.scss";
+import Link from "next/link";
 
 const Menu = () => {
   return (
-    <div className={style.menu}>
+    <div className={styles.menu}>
       <h2>
-        <Link href="/speak-up">
-          <a>Speak Up</a>
-        </Link>
+        <Link href="/speak-up">Speak Up</Link>
       </h2>
       <h2>
-        <Link href="/about-us">
-          <a>About Us</a>
-        </Link>
+        <Link href="/about-us">About Us</Link>
       </h2>
     </div>
   );

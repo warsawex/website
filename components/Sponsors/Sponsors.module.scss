@@ -17,8 +17,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    > img {
-      height: 48px;
+    > a img {
+      height: 64px;
       width: auto;
       margin-bottom: 45px;
     }
@@ -26,7 +26,7 @@
 }
 
 @media screen and (min-width: 800px) {
-  hr {
+  .sponsors hr {
     width: 30%;
   }
   .sponsors > .logos {

@@ -1,14 +1,14 @@
-import style from "./style.scss";
+import styles from "./PreviousSpeakers.module.scss";
 
-const Speaker = props => (
-  <div className={style.speaker}>
-    <div className={style.container}>
+const Speaker = (props) => (
+  <div className={styles.speaker}>
+    <div className={styles.container}>
       <div
-        className={style.image}
+        className={styles.image}
         style={{
           backgroundImage: `url("${props.avatar}")`,
           backgroundSize: `cover`,
-          backgroundPositionX: `center`
+          backgroundPositionX: `center`,
         }}
       />
     </div>

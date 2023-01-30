@@ -1,23 +1,19 @@
-import style from "./style.scss";
+import styles from "./About.module.scss";
 
 const About = () => (
-  <div className={style.about}>
-    <div className={style.banner}>
-      <div className={style.headers}>
+  <div className={styles.about}>
+    <div className={styles.banner}>
+      <div className={styles.headers}>
         <h1>About Us</h1>
-        <p className={style.emphasis}>
+        <p className={styles.emphasis}>
           Meet warsaw.ex founders and discover our story
         </p>
         <p>Our story begins in November 2018…</p>
       </div>
-      <img src="/static/logo_about_us.svg" alt="big warsaw.ex logo" />
+      <img src="/logo_about_us.svg" alt="big warsaw.ex logo" />
     </div>
-    <img
-      src="./static/arrow_down.svg"
-      alt="arrow down"
-      className={style.arrow}
-    />
-    <div className={style.story}>
+    <img src="./arrow_down.svg" alt="arrow down" className={styles.arrow} />
+    <div className={styles.story}>
       <h2>Our Story</h2>
       <hr />
       <p>

@@ -1,9 +1,9 @@
-import style from "./style.scss";
+import styles from "./SeeUs.module.scss";
 
 const SeeUs = () => (
-  <div className={style.see_us}>
+  <div className={styles.seeUs}>
     See us on the next Meetup!
-    <button className={style.join}>
+    <button className={styles.join}>
       <a href="https://www.meetup.com/pl-PL/warsaw-ex/" target="_blank">
         JOIN THE COMMUNITY
       </a>

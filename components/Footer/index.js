@@ -1,23 +1,23 @@
-import style from "./style.scss";
+import styles from "./Footer.module.scss";
 import Contact from "./Contact";
 import Logo from "./Logo";
 import Menu from "./Menu";
 import Media from "./Media";
 
 const Footer = () => (
-  <div className={style.footer}>
-    <div className={style.mobile}>
+  <div className={styles.footer}>
+    <div className={styles.mobile}>
       <Logo />
       <Media />
       <Menu />
       <Contact />
     </div>
-    <div className={style.desktop}>
-      <div className={style.leftColumn}>
+    <div className={styles.desktop}>
+      <div className={styles.leftColumn}>
         <Contact />
       </div>
       <Logo />
-      <div className={style.rightColumn}>
+      <div className={styles.rightColumn}>
         <Menu />
         <Media />
       </div>

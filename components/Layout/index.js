@@ -1,26 +1,25 @@
 import React from "react";
 import Head from "next/head";
 import ReactGA from "react-ga";
-import "./style.scss";
 
-const LayoutWrapper = props => props.children;
+const LayoutWrapper = (props) => props.children;
 
-const createTitle = title => {
+const createTitle = (title) => {
   if (title) {
     return `${title} | warsaw.ex`;
   } else {
     return "warsaw.ex - Warsaw's Elixir meetup group";
   }
-}
+};
 
 export const initGA = () => {
-  ReactGA.initialize('UA-142587988-1')
-}
+  ReactGA.initialize("UA-142587988-1");
+};
 
 export const logPageView = () => {
-  ReactGA.set({ page: window.location.pathname })
-  ReactGA.pageview(window.location.pathname)
-}
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+};
 
 class Layout extends React.Component {
   componentDidMount() {
@@ -40,16 +39,9 @@ class Layout extends React.Component {
           <meta
             name="description"
             content="warsaw.ex is a community dedicated to Elixir, Erlang, OTP
-            and functional programming, organizing monthly meetups in Warsaw." />
-          <link
-            href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,900"
-            rel="stylesheet"
+            and functional programming, organizing monthly meetups in Warsaw."
           />
-          <link
-            rel="shortcut icon"
-            type="image/png"
-            href="/static/favicon.png"
-          />
+          <link rel="shortcut icon" type="image/png" href="/favicon.png" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         {this.props.children}

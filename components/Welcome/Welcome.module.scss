@@ -1,5 +1,5 @@
 .welcome {
-  background-image: url('/static/warsawexlogo_half.svg'),
+  background-image: url("/warsawexlogo_half.svg"),
     linear-gradient(#4f4092, #6e3e90ee, #813d8f00);
   background-position: right 15px, 0% 0%;
   background-repeat: no-repeat;
@@ -9,6 +9,7 @@
   justify-content: space-between;
   padding: 30px 30px 100px 30px;
   min-height: 700px;
+
   h1 {
     font-size: 30px;
     font-weight: lighter;
@@ -16,6 +17,7 @@
     margin: 40px 0;
     width: calc(100% - 100px);
   }
+
   .desktopButton {
     display: none;
   }
@@ -43,7 +45,7 @@
 @media screen and (min-width: 800px) {
   .welcome {
     flex-wrap: wrap-reverse;
-    background-image: url('/static/warsawex-symbol.svg'),
+    background-image: url("/warsawex-symbol.svg"),
       linear-gradient(118deg, #4f4092, #813d8f);
     background-position-x: calc(100% - 30px), 0px;
     background-position-y: 70px, 5%;

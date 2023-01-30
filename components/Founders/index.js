@@ -1,21 +1,21 @@
-import style from "./style.scss";
+import styles from "./Founders.module.scss";
 
 const Founders = () => (
-  <div className={style.founders}>
+  <div className={styles.founders}>
     <h1>Our Founders</h1>
     <hr />
-    <div className={style.thesegoys}>
-      <div className={style.founder}>
-        <div className={style.container}>
-          <img src="/static/kamil_kowalski.jpg" alt="photo of Kamil Kowalski" />
+    <div className={styles.thesegoys}>
+      <div className={styles.founder}>
+        <div className={styles.container}>
+          <img src="/kamil_kowalski.jpg" alt="photo of Kamil Kowalski" />
         </div>
         <h2>Kamil Kowalski</h2>
         <h3>Engineering Manager at Fresha</h3>
       </div>
-      <div className={style.founder}>
-        <div className={style.container}>
+      <div className={styles.founder}>
+        <div className={styles.container}>
           <img
-            src="/static/robert_maciejewski.jpg"
+            src="/robert_maciejewski.jpg"
             alt="photo of Robert Maciejewski"
           />
         </div>

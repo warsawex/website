@@ -1,6 +1,7 @@
-const withSass = require("@zeit/next-sass");
+/** @type {import('next').NextConfig} */
 
-module.exports = withSass({
-  cssModules: true,
-  target: "serverless"
-});
+const nextConfig = {
+  reactStrictMode: true,
+};
+
+module.exports = nextConfig;

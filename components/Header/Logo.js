@@ -2,9 +2,7 @@ import Link from "next/link";
 
 const Logo = () => (
   <Link href="/">
-    <a>
-      <img src="/static/warsawex-logo.svg" alt="warsaw.ex logo" />
-    </a>
+    <img src="/warsawex-logo.svg" alt="warsaw.ex logo" />
   </Link>
 );
 
