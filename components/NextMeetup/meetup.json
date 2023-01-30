@@ -1,24 +1,23 @@
 {
-  "number": 9,
-  "date": "2020-02-26T19:00:00+01:00",
+  "number": 10,
+  "date": "2023-02-23T19:00:00+01:00",
   "place": {
-    "link": "https://goo.gl/maps/QBQLvcJPFG1VmHz18",
-    "name": "Przestrzeń from Facebook"
+    "link": "",
+    "name": "TBA"
   },
+  "specialGuest": "José Valim",
   "talks": [
     {
-      "title": "Phoenix on Kubernetes",
-      "speaker": "Bartek Kruszczyński",
-      "language": "Polish",
-      "description": "Bartek will talk about the process of deploying a Phoenix application using Kubernetes.",
-      "level": 4
+      "title": "TBA",
+      "speaker": "Hans Elias B. Josephsen",
+      "description": "TBA",
+      "level": 0
     },
     {
-      "title": "\"Kto to Panu tak…\"",
-      "speaker": "Michał Korulczyk",
-      "language": "Polish",
-      "description": "Czyli o tym jak niewłaściwe stosowanie dostępnych narzędzi potrafi utrudnić życie programisty",
-      "level": 3
+      "title": "TBA",
+      "speaker": "Artur Sulej",
+      "description": "TBA",
+      "level": 0
     }
   ]
 }
