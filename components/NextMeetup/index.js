@@ -61,11 +61,20 @@ const Meetup = () => {
             <h2>✨ Special guest: {meetup.specialGuest} ✨</h2>
           </div>
           {meetup.talks.map((talk, index) => {
-            const { title, speaker, description, level } = talk;
+            const { title, speaker, github, description, level } = talk;
             return (
               <div key={index} className={styles.talk}>
                 <h2>👉 {title}</h2>
-                <h3>Speaker: {speaker}</h3>
+                <h3>
+                  Speaker:&nbsp;
+                  <a
+                    href={github}
+                    target="_blank"
+                    className={styles.githubLink}
+                  >
+                    {speaker}
+                  </a>
+                </h3>
                 <p>{description}</p>
                 {displayLevel(level)}
               </div>
