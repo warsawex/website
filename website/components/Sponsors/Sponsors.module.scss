@@ -1,0 +1,36 @@
+.sponsors {
+  text-align: center;
+  padding: 30px;
+  > h1 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #132233;
+    margin-bottom: 0px;
+  }
+  hr {
+    border-width: 0.5px;
+    border-color: #813d8f;
+    margin-top: 20px;
+    margin-bottom: 90px;
+  }
+  .logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > a img {
+      height: 64px;
+      width: auto;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .sponsors hr {
+    width: 30%;
+  }
+  .sponsors > .logos {
+    display: inline-flex;
+    flex-direction: row;
+  }
+}
