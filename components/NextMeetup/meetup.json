@@ -2,8 +2,8 @@
   "number": 10,
   "date": "2023-02-23T19:00:00+01:00",
   "place": {
-    "link": "",
-    "name": "TBA"
+    "link": "https://goo.gl/maps/ZNaSWhg7znKwgwAH9",
+    "name": "Chałubińskiego 8, Warszawa"
   },
   "specialGuest": "José Valim",
   "talks": [
