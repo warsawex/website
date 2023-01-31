@@ -1,5 +1,4 @@
 import styles from "./NextMeetUp.module.scss";
-import Link from "next/link";
 import meetup from "./meetup.json";
 
 var options = {
@@ -67,24 +66,20 @@ const Meetup = () => {
                 <h2>👉 {title}</h2>
                 <h3>
                   Speaker:&nbsp;
-                  <a
-                    href={github}
-                    target="_blank"
-                    className={styles.githubLink}
-                  >
+                  <a href={github} target="_blank">
                     {speaker}
                   </a>
                 </h3>
-                <p>{description}</p>
+                {/* <p>{description}</p> */}
                 {displayLevel(level)}
               </div>
             );
           })}
-          <div className={styles.talk}>
+          {/* <div className={styles.talk}>
             <h2>👉 Lightning Talks / Bring Your Own Problem</h2>
-          </div>
+          </div> */}
           <button className={styles.signButton}>
-            <Link href="/speak-up">Sign me up</Link>
+            <a href="https://www.meetup.com/pl-PL/warsaw-ex/">Sign me up</a>
           </button>
         </div>
       </div>
