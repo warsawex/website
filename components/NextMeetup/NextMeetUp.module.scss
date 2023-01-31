@@ -62,11 +62,18 @@
     margin-top: 20px;
     margin-bottom: 35px;
   }
-  .talk > h2 {
+  .talk,
+  .specialGuest {
+    margin-bottom: 25px;
+  }
+  .talk > h2,
+  .specialGuest > h2 {
     font-size: 18px;
     font-weight: 700;
     color: #132233;
     opacity: 1;
+  }
+  .talk > h2 {
     margin-bottom: 25px;
   }
   .talk > h3,
@@ -96,7 +103,7 @@
     margin-right: 10px;
   }
   .level > img {
-    margin: 10px 3px 50px 0px;
+    margin: 10px 3px 10px 0px;
   }
   .signButton,
   .arrow {
